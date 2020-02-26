@@ -1,12 +1,18 @@
 import React from 'react';
 import './CurrencySelector.scss';
 
-function CurrencySelector() {
-  return (
-    <div className="currency-selector">
-      currency Selector component
-    </div>
-  );
+class CurrencySelector extends React.Component {
+  constructor() {
+    super();
+  }
+
+  render() {
+    return (
+      <div className="currency-selector">
+        currency Selector component
+      </div>
+    );
+  }
 }
 
 export default CurrencySelector;
