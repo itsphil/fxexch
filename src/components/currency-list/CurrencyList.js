@@ -1,10 +1,14 @@
 import React from 'react';
 import './CurrencyList.css';
 
+import Currency from '../currency/Currency';
+
 function CurrencyList() {
   return (
     <div className="currency-list">
-      currency List component
+      <Currency />
+      <Currency />
+      <Currency />
     </div>
   );
 }

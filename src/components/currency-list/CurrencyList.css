@@ -1,0 +1,9 @@
+.currency-list {
+    height: 100%;
+    left: 300px;
+    padding: 40px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: auto;
+}

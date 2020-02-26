@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import Currency from './Currency';
+import CurrencySelector from './CurrencySelector';
 
 // test('renders learn react link', () => {
 //   const { getByText } = render(<App />);
