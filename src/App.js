@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 
 import CurrencyList from './components/currency-list/CurrencyList';
 import SettingsInline from './components/settings-inline/SettingsInline';

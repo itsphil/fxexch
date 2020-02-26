@@ -1,5 +1,5 @@
 import React from 'react';
-import './CurrencySelector.css';
+import './CurrencySelector.scss';
 
 function CurrencySelector() {
   return (

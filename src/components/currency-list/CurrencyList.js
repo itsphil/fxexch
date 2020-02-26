@@ -1,5 +1,5 @@
 import React from 'react';
-import './CurrencyList.css';
+import './CurrencyList.scss';
 
 import Currency from '../currency/Currency';
 

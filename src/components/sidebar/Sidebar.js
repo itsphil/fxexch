@@ -1,5 +1,5 @@
 import React from 'react';
-import './Sidebar.css';
+import './Sidebar.scss';
 
 import CurrencySelector from '../currency-selector/CurrencySelector';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import './SettingsInline.css';
+import './SettingsInline.scss';
 
 function SettingsInline() {
   return (
