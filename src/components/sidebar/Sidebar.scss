@@ -2,7 +2,8 @@
     background: #EEE;
     height: 100%;
     left: 0;
+    overflow: hidden;
     position: fixed;
     top: 0;
-    width: 300px;
+    transition: width 0.2s ease-in-out;
 }

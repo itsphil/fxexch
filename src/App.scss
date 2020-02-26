@@ -1,0 +1,21 @@
+@import 'variables';
+
+.app {
+    .sidebar {
+        width: $sidebarClosedWidth;
+    }
+
+    .currency-list {
+        left: $sidebarClosedWidth;
+    }
+
+    &.open {
+        .sidebar {
+            width: $sidebarWidth;
+        }
+
+        .currency-list {
+            left: $sidebarWidth;
+        }
+    }
+}

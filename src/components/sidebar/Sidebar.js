@@ -3,14 +3,32 @@ import './Sidebar.scss';
 
 import CurrencySelector from '../currency-selector/CurrencySelector';
 
-function Sidebar() {
-  return (
-    <div className="sidebar">
-      Sidebar component
+class Sidebar extends React.Component {
+  constructor(props) {
+    super(props);
 
-      <CurrencySelector />
-    </div>
-  );
+    this.state = {
+      open: false
+    }
+
+    this.updateSidebarState = this.updateSidebarState.bind(this);
+  }
+  
+  updateSidebarState() {
+    this.setState({ open: !this.state.open });
+    
+    this.props.onSidebarChange(!this.state.open);
+  }
+
+  render() {
+    return (
+      <div className="sidebar" onClick={this.updateSidebarState}>
+        Sidebar component
+
+        <CurrencySelector />
+      </div>
+    );
+  }
 }
 
 export default Sidebar;
