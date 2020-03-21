@@ -4,8 +4,8 @@ import './CurrencyList.scss';
 import Currency from '../currency/Currency';
 
 class CurrencyList extends React.Component {
-  constructor() {
-    super();
+  constructor(props: any) {
+    super(props);
   }
 
   render() {

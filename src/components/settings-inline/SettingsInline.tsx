@@ -2,8 +2,8 @@ import React from 'react';
 import './SettingsInline.scss';
 
 class SettingsInline extends React.Component {
-  constructor() {
-    super();
+  constructor(props: any) {
+    super(props);
   }
 
   render() {

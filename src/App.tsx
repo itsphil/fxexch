@@ -8,8 +8,8 @@ import { SIDEBAR_STATE } from './redux/constants';
 import store from './redux/store';
 
 class App extends React.Component {
-  constructor() {
-    super();
+  constructor(props: any) {
+    super(props);
 
     this.state = {
       sidebarState: store.getState().sidebarState
@@ -25,7 +25,7 @@ class App extends React.Component {
   }
 
   getSidebarClass() {
-    return this.state.sidebarState === SIDEBAR_STATE.OPEN ? ' open' : '';
+    // return this.state.sidebarState === SIDEBAR_STATE.OPEN ? ' open' : '';
   }
 
   render() {

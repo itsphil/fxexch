@@ -2,8 +2,8 @@ import React from 'react';
 import './Price.scss';
 
 class Price extends React.Component {
-  constructor() {
-    super();
+  constructor(props: any) {
+    super(props);
   }
 
   render() {

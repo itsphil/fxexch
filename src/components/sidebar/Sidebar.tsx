@@ -7,8 +7,8 @@ import { SIDEBAR_STATE } from '../../redux/constants';
 import store from '../../redux/store';
 
 class Sidebar extends React.Component {
-  constructor() {
-    super();
+  constructor(props: any) {
+    super(props);
 
     this.state = {
       open: SIDEBAR_STATE.CLOSED
@@ -18,11 +18,11 @@ class Sidebar extends React.Component {
   }
   
   updateSidebarState() {
-    const newState = this.state.open === SIDEBAR_STATE.CLOSED ? SIDEBAR_STATE.OPEN : SIDEBAR_STATE.CLOSED;
+    // const newState = this.state.open === SIDEBAR_STATE.CLOSED ? SIDEBAR_STATE.OPEN : SIDEBAR_STATE.CLOSED;
 
-    this.setState({ open: newState });   
+    // this.setState({ open: newState });   
 
-    store.dispatch(sidebarToggle(newState));
+    // store.dispatch(sidebarToggle(newState));
   }
 
   render() {

@@ -2,8 +2,8 @@ import React from 'react';
 import './CurrencySelector.scss';
 
 class CurrencySelector extends React.Component {
-  constructor() {
-    super();
+  constructor(props: any) {
+    super(props);
   }
 
   render() {

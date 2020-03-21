@@ -4,8 +4,8 @@ import './Currency.scss';
 import Price from '../price/Price';
 
 class Currency extends React.Component {
-  constructor() {
-    super();
+  constructor(props: any) {
+    super(props);
   }
 
   render() {
