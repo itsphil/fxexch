@@ -7,7 +7,11 @@ import Sidebar from './components/sidebar/Sidebar';
 import { SIDEBAR_STATE } from './redux/constants';
 import store from './redux/store';
 
-class App extends React.Component {
+interface State {
+  sidebarState: string
+}
+
+class App extends React.Component<{}, State> {
   constructor(props: any) {
     super(props);
 
@@ -25,7 +29,7 @@ class App extends React.Component {
   }
 
   getSidebarClass() {
-    // return this.state.sidebarState === SIDEBAR_STATE.OPEN ? ' open' : '';
+    return this.state.sidebarState === SIDEBAR_STATE.OPEN ? ' open' : '';
   }
 
   render() {

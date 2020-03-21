@@ -11,6 +11,8 @@ class CurrencyList extends React.Component {
   render() {
     return (
       <div className="currency-list">
+        Currency List Component
+        
         <Currency />
         <Currency />
         <Currency />

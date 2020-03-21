@@ -11,6 +11,7 @@ class Currency extends React.Component {
   render() {
     return (
       <div className="currency">
+        Currency Component
         <Price />
       </div>
     );

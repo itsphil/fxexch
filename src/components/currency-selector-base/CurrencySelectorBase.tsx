@@ -1,5 +1,5 @@
 import React from 'react';
-import './CurrencySelector.scss';
+import './CurrencySelectorBase.scss';
 
 class CurrencySelector extends React.Component {
   constructor(props: any) {
@@ -9,7 +9,7 @@ class CurrencySelector extends React.Component {
   render() {
     return (
       <div className="currency-selector">
-        Currency Selector component
+        Currency Selector Base component
       </div>
     );
   }
