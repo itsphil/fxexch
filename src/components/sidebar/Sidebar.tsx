@@ -3,8 +3,10 @@ import './Sidebar.scss';
 
 import CurrencySelectorBase from '../currency-selector-base/CurrencySelectorBase';
 import CurrencySelector from '../currency-selector/CurrencySelector';
-import { sidebarToggle } from '../../redux/actions';
-import { SIDEBAR_STATE } from '../../redux/constants';
+import {
+  SIDEBAR_STATE,
+  sidebarToggle
+} from '../../redux';
 import store from '../../redux/store';
 
 interface State {
@@ -15,9 +17,7 @@ class Sidebar extends React.Component<{}, State> {
   constructor(props: any) {
     super(props);
 
-    this.state = {
-      open: SIDEBAR_STATE.CLOSED
-    }
+    this.state = store.getState().sidebarState;
 
     this.updateSidebarState = this.updateSidebarState.bind(this);
   }

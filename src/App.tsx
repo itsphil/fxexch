@@ -4,11 +4,11 @@ import './App.scss';
 import CurrencyList from './components/currency-list/CurrencyList';
 import SettingsInline from './components/settings-inline/SettingsInline';
 import Sidebar from './components/sidebar/Sidebar';
-import { SIDEBAR_STATE } from './redux/constants';
+import { SIDEBAR_STATE } from './redux';
 import store from './redux/store';
 
 interface State {
-  sidebarState: string
+  sidebarState: any;
 }
 
 class App extends React.Component<{}, State> {
@@ -29,7 +29,7 @@ class App extends React.Component<{}, State> {
   }
 
   getSidebarClass() {
-    return this.state.sidebarState === SIDEBAR_STATE.OPEN ? ' open' : '';
+    return this.state.sidebarState.open === SIDEBAR_STATE.OPEN ? ' open' : '';
   }
 
   render() {
